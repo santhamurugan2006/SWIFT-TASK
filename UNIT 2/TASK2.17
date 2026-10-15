@@ -1,0 +1,9 @@
+let names = ["Arun", "Anu", "Bala", "Bobby", "Charlie"]
+var groups: [Character: [String]] = [:]
+
+for name in names {
+    let firstLetter = name.first!
+    groups[firstLetter, default: []].append(name)
+}
+
+print(groups)
